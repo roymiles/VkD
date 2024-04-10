@@ -28,7 +28,7 @@ We provide the training code and weights for the two main sets of experiments co
 Training data-efficient image transformers using orthogonal knowledge distillation. 
 All models are trained for 300 epochs with a CNN based teacher.
 The dataset should be downloaded and copied to `/data/imagenet2012`.
-The pre-trained regnet-y teacher weights (original DeiT) can be found [here](https://drive.google.com/drive/folders/1vtNwxbHHvJnbFMwjD8oyjjW0lyHqfuRy?usp=sharing). Currently the code is setup to use automatically download the weights from Hugging Face for conveniance. However, we did find the original DeiT teacher weights to be much more effective (+0.5%).
+The pre-trained regnet-y teacher weights (original DeiT) can be found [here](https://drive.google.com/drive/folders/1vtNwxbHHvJnbFMwjD8oyjjW0lyHqfuRy?usp=sharing). Currently the code is setup to use automatically download the weights from Hugging Face for conveniance. However, we did find the original DeiT teacher weights to be much more effective (+0.5%). We have recently re-ran the experiments for DeiT-Ti and improved the performance to 79.2%. This is with a single GPU and a batch size of 512. Multi-GPU training will likely require changing some learning rate/scheduling hyperparameters to be the most effective.
 
 ### Pretrained Models
 
@@ -37,6 +37,7 @@ We provide the pre-distilled model weights and logs for the DeIT experiments.
 | Model | Top-1 Acc | Top-5 Acc | Params | Weights / Log |
 | --- | --- | --- | --- | --- |
 | tiny | 78.3 | 94.1 | 6M | [link](https://drive.google.com/drive/folders/1G8jv2If3lpFlnfnmGUFrrh6Lxhzdc6y-?usp=drive_link) |
+| tiny (run 2) | 79.2 | 94.6 | 6M | [link](https://drive.google.com/drive/folders/1L4tgMthQVdRv1SD9DV_9xyLhAHBPMtuk) |
 | small | 82.3 | 96.0 | 22M| [link](https://drive.google.com/drive/folders/1aBYO8BhJMCKij4GxZXXaxZkaT6VVL1-0?usp=sharing) |
 
 ### Evaluation
@@ -77,10 +78,10 @@ We have tested training with 1 and 2 GPUs using effective batches sizes between 
 
 <details>
 <summary>Run this command to train the <code>DeiT-Ti</code> model in the paper :</summary>
-<pre><code>CUDA_VISIBLE_DEVICES=0,1 OMP_NUM_THREADS=4 \
+<pre><code>CUDA_VISIBLE_DEVICES=0 OMP_NUM_THREADS=4 \
 python -m torch.distributed.launch \
        --master_port 1236 \
-       --nproc_per_node=2 \
+       --nproc_per_node=1 \
        main_distributed.py \
        --teacher regnety_160 \
        --student-model deit_ti_distilled \
@@ -91,10 +92,10 @@ python -m torch.distributed.launch \
 
 <details>
 <summary>Run this command to train the <code>DeiT-S</code> model in the paper :</summary>
-<pre><code>CUDA_VISIBLE_DEVICES=0,1 OMP_NUM_THREADS=4 \
+<pre><code>CUDA_VISIBLE_DEVICES=0 OMP_NUM_THREADS=4 \
 python -m torch.distributed.launch \
        --master_port 1237 \
-       --nproc_per_node=2 \
+       --nproc_per_node=1 \
        main_distributed.py \
        --teacher regnety_160 \
        --student-model deit_s_distilled \
