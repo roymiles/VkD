@@ -39,6 +39,7 @@ We provide the pre-distilled model weights and logs for the DeIT experiments.
 | tiny | 78.3 | 94.1 | 6M | [link](https://drive.google.com/drive/folders/1G8jv2If3lpFlnfnmGUFrrh6Lxhzdc6y-?usp=drive_link) |
 | tiny (single gpu) | 79.2 | 94.6 | 6M | [link](https://drive.google.com/drive/folders/1L4tgMthQVdRv1SD9DV_9xyLhAHBPMtuk) |
 | small | 82.3 | 96.0 | 22M| [link](https://drive.google.com/drive/folders/1aBYO8BhJMCKij4GxZXXaxZkaT6VVL1-0?usp=sharing) |
+| small (single-gpu) | 82.9 | 96.2 | 22M| [link](https://drive.google.com/drive/folders/1up5w3V4PFwobkiQs_4tVnDw7_2RdvXr2)
 
 ### Evaluation
 
