@@ -208,7 +208,7 @@ We provide the pre-distilled model weights and full logs for the ViDT experiment
 ## Citation
 ```
 @InProceedings{miles2024orthogonalKD,
-      title      = {Understanding the Role of the Projector in Knowledge Distillation}, 
+      title      = {VkD : Improving Knowledge Distillation using Orthogonal Projections}, 
       author     = {Roy Miles, Ismail Elezi and Jiankang Deng},
       booktitle  = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
       year       = {2024},
