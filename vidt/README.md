@@ -1,0 +1,1 @@
+Modified from the original [ViDT code](https://github.com/naver-ai/vidt/tree/main).

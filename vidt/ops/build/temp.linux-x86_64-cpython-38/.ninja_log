@@ -1,0 +1,7 @@
+# ninja log v5
+0	11078	1725306494	/home/mvp/vkd/vidt/ops/build/temp.linux-x86_64-cpython-38/home/mvp/vkd/vidt/ops/src/cpu/ms_deform_attn_cpu.o	b43f10b3d48fe55c
+1	28298	1725306511	/home/mvp/vkd/vidt/ops/build/temp.linux-x86_64-cpython-38/home/mvp/vkd/vidt/ops/src/cuda/ms_deform_attn_cuda.o	4ccbbcf1c634288
+1	32487	1725306516	/home/mvp/vkd/vidt/ops/build/temp.linux-x86_64-cpython-38/home/mvp/vkd/vidt/ops/src/vision.o	a843716e42b4c46a
+28	10528	1725307199	/home/mvp/vkd/vidt/ops/build/temp.linux-x86_64-cpython-38/home/mvp/vkd/vidt/ops/src/cpu/ms_deform_attn_cpu.o	6ccac9b4ddc521ef
+28	28291	1725307216	/home/mvp/vkd/vidt/ops/build/temp.linux-x86_64-cpython-38/home/mvp/vkd/vidt/ops/src/cuda/ms_deform_attn_cuda.o	69f3cdcce0dcab87
+29	32124	1725307220	/home/mvp/vkd/vidt/ops/build/temp.linux-x86_64-cpython-38/home/mvp/vkd/vidt/ops/src/vision.o	b742cd4dad444ca6
