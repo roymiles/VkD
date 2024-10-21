@@ -1,12 +1,17 @@
-# VkD : Improving Knowledge Distillation using Orthogonal Projections
-This is the official implementation of CVPR24 paper "VkD : Improving Knowledge Distillation using Orthogonal Projections"
-Code for the CVPR24 paper:
+<div align="center">
+<h1>VkD : Improving Knowledge Distillation using Orthogonal Projections</h1>
 
-```text
-"VkD : Improving Knowledge Distillation using Orthogonal Projections".
-Roy Miles, Ismail Elezi, Jiankang Deng. CVPR 2024.
-```
-[[Paper on arxiv](https://arxiv.org/abs/2403.06213)]
+[Roy Miles](https://roymiles.github.io/)<sup>1</sup>, 
+[Ismail Elezi](https://therevanchist.github.io/)<sup>1</sup>,
+[Jiankang Deng](https://jiankangdeng.github.io/)<sup>1</sup>
+
+<sup>1</sup> Huawei Noah's Ark Lab
+
+ArXiv Preprint (https://arxiv.org/abs/2403.06213)
+
+ <img src="figure.png" alt="VkD overview." style="width: 80%; float: left; margin-right: 10px;"/>
+
+</div>
 
 ## Abstract
 
